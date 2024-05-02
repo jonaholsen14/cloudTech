@@ -1,0 +1,48 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.project {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project h2 {
+    color: #00bfff; /* Dark blue */
+}
+
+.project p {
+    color: #00ff00; /* Dark green */
+}
+
+.project a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
