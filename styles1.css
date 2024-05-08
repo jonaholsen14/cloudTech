@@ -1,0 +1,32 @@
+body {
+    background-color: #f2f2f2; /* Light mode background color */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#darkModeBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+.dark-mode body {
+    background-color: #1e1e1e; /* Dark mode background color */
+    color: #fff; /* Text color */
+}
+
+.dark-mode input[type="date"], .dark-mode button {
+    background-color: #333; /* Dark mode input and button background color */
+    color: #fff; /* Text color */
+}
