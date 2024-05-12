@@ -1,23 +1,30 @@
-// Define two values
-let value1 = 2;
-let value2 = 4;
+// Function to parse and perform math operations
+function calculate(input) {
+// Split the input string into an array of words
+const parts = input.split(" ");
 
-// Addition
-let sum = value1 + value2;
-console.log(`Sum: ${sum}`);
+// Extract the operation and operands
+const operation = parts[0].toUpperCase();
+const operand1 = parseFloat(parts[1]);
+const operand2 = parseFloat(parts[2]);
 
-// Subtraction
-let difference = value1 - value2;
-console.log(`Difference: ${difference}`);
+// Perform the corresponding operation
+switch (operation) {
+    case "ADD":
+        return operand1 + operand2;
+    case "SUBTRACT":
+        return operand1 - operand2;
+    case "MULTIPLY":
+        return operand1 * operand2;
+    case "DIVIDE":
+        return operand1 / operand2;
+    default:
+        return "Invalid operation";
+}
+}
 
-// Multiplication
-let product = value1 * value2;
-console.log(`Product: ${product}`);
-
-// Division
-let quotient = value1 / value2;
-console.log(`Quotient: ${quotient}`);
-
-// Modulus (Remainder)
-let remainder = value1 % value2;
-console.log(`Remainder: ${remainder}`);
+// Prompt the user for input
+const userInput = prompt("Enter a math operation (e.g., ADD 2 2):");
+const result = calculate(userInput);
+console.log(`Result: ${result}`);
+alert(`Result: ${result}`);
